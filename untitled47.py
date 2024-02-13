@@ -71,7 +71,7 @@ class KMeans:
 
 km = KMeans(n_clusters = 2, max_iter=100)
 ymean = km.fit_predict(X)
+
 plt.scatter(X[ymean == 0, 0], X[ymean == 0, 1], color = 'red')
 plt.scatter(X[ymean == 1, 0], X[ymean == 1, 1], color = 'blue')
-
 plt.show()
